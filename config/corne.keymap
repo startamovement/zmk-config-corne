@@ -70,8 +70,8 @@
             bindings = <
 &kp TAB               &kp Q               &kp W           &kp E           &kp R             &kp T         &kp Y        &kp U              &kp I            &kp O            &kp P           &kp LC(SPACE)
 &hm LEFT_SHIFT GRAVE  &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &hm LEFT_SHIFT F  &kp G         &kp H        &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L  &hm RCTRL SEMI  &hm RIGHT_SHIFT APOS
-&kp EQUAL             &kp Z               &kp X           &kp C           &kp V             &kp B         &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH        &mo 5
-                                                          &lt 2 DELETE    &lt 1 BACKSPACE   &kp ESCAPE    &lt 1 ENTER  &kp SPACE          &lt 3 TAB
+&kp EQUAL             &kp Z               &kp X           &kp C           &kp V             &kp B         &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH        &mo 6
+                                                          &lt 3 DELETE    &lt 1 BACKSPACE   &kp ESCAPE    &lt 1 ENTER  &kp SPACE          &lt 4 TAB
             >;
         };
 
@@ -81,6 +81,15 @@
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &caps_word     &trans
 &trans  &trans            &trans        &trans        &trans          &trans    &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp INSERT     &trans
                                         &trans        &trans          &trans    &trans     &trans          &trans
+            >;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans            &trans        &trans        &trans          &trans    &kp LG(V)       &kp LG(C)       &kp LG(X)     &kp LG(Z)        &kp LG(LS(Z))  &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &caps_word     &trans
+&trans  &trans            &trans        &trans        &trans          &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp INSERT     &trans
+                                        &trans        &trans          &trans    &mkp RCLK       &mkp LCLK       &mkp MCLK
             >;
         };
 
@@ -97,7 +106,7 @@
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
 &caps   &trans  &trans  &trans  &trans  &trans    &kp N0  &kp N4  &kp N5  &kp N6  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &mo 4
+                        &trans  &trans  &trans    &trans  &trans  &mo 5
             >;
         };
 
@@ -114,7 +123,7 @@
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LEFT_PARENTHESIS  &kp RPAR  &trans
 &trans  &trans    &trans  &trans    &trans    &kp GRAVE    &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT              &kp BSLH  &trans
 &trans  &trans    &trans  &trans    &trans    &kp TILDE    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC              &kp PIPE  &trans
-                          &mo 4     &trans    &trans       &trans     &trans     &trans
+                          &mo 5     &trans    &trans       &trans     &trans     &trans
             >;
         };
 
