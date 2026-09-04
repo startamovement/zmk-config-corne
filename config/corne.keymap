@@ -77,8 +77,8 @@
 
         NAV {
             bindings = <
-&trans  &trans            &trans        &trans        &trans          &trans    &kp LG(V)  &kp LG(C)       &kp LG(X)     &kp LG(Z)  &kp LG(LS(Z))  &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &caps_word     &trans
+&trans  &trans            &trans        &trans        &trans          &trans    &kp LG(V)  &kp LG(C)       &kp LG(X)     &kp LG(Z)  &kp LG(LS(Z))  &kp RG(RS(RC(NUMBER_4)))
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp LEFT   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &caps_word     &kp RG(RS(NUMBER_4))
 &trans  &trans            &trans        &trans        &trans          &trans    &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp INSERT     &trans
                                         &trans        &trans          &trans    &trans     &trans          &trans
             >;
