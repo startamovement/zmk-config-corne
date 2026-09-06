@@ -112,7 +112,7 @@
                                         &trans        &trans          &trans    &trans     &trans          &trans
             >;
 
-            label = "Navigation";
+            label = "Nav";
         };
 
         MOUSE {
