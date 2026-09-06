@@ -151,10 +151,10 @@
         SYM {
             display-name = "Symbols";
             bindings = <
-&trans  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &trans  &trans           &trans         &trans         &trans     &trans
-&trans  &kp COLON       &kp DOLLAR       &kp PERCENT           &kp CARET              &kp PLUS           &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL  &trans
-&trans  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &trans  &trans           &trans         &trans         &trans     &trans
-                                         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans  &trans           &trans
+&trans  &kp EQUAL        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PIPE                 &trans  &trans           &trans         &trans         &trans     &trans
+&trans  &kp LEFT_BRACE   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp LEFT_BRACKET         &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL  &trans
+&trans  &kp RIGHT_BRACE  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_BRACKET        &trans  &trans           &trans         &trans         &trans     &trans
+                                          &none         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans           &trans
             >;
         };
 
