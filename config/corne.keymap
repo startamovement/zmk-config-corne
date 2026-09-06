@@ -111,6 +111,8 @@
 &trans  &trans            &trans        &trans        &trans          &trans    &kp HOME   &kp PAGE_DOWN   &kp PAGE_UP   &kp END    &kp INSERT     &trans
                                         &trans        &trans          &trans    &trans     &trans          &trans
             >;
+
+            label = "Navigation";
         };
 
         MOUSE {
@@ -120,6 +122,8 @@
 &trans  &trans            &trans        &trans        &trans          &trans    &msc SCRL_RIGHT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_LEFT   &kp INSERT     &trans
                                         &trans        &trans          &to 0     &mkp RCLK        &mkp LCLK       &mkp MCLK
             >;
+
+            label = "Mouse";
         };
 
         MEDIA {
@@ -129,6 +133,8 @@
 &trans  &trans            &trans        &trans        &trans          &trans    &bt BT_SEL 0    &bt BT_SEL 1          &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
                                         &trans        &trans          &trans    &kp C_STOP      &kp C_PLAY_PAUSE      &kp C_MUTE
             >;
+
+            label = "Media";
         };
 
         NUM {
