@@ -100,6 +100,28 @@
             key-positions = <13 40>;
             layers = <0>;
         };
+
+        paraless_combo {
+            bindings = <&paraless>;
+            key-positions = <27 28 27>;
+            layers = <0>;
+        };
+
+        paragreat_combo {
+            bindings = <&paragreat>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        bracket_left_combo {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <15 16>;
+        };
+
+        bracket_right_combo {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <19 20>;
+        };
     };
 
     //
@@ -167,10 +189,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans  &trans    &kp N7        &kp N8        &kp N9        &kp BACKSLASH    &trans  &trans           &trans         &trans         &trans     &trans
-&trans  &trans    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTRK        &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL  &trans
-&to 4   &kp PLUS  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL        &trans  &trans           &trans         &trans         &trans     &trans
-                                &kp PERIOD    &kp N0        &kp MINUS        &to 0   &trans           &trans
+&trans  &paraless         &kp N7        &kp N8        &kp N9        &paragreat           &trans  &trans           &trans         &trans         &trans     &trans
+&trans  &kp LEFT_BRACKET  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp RIGHT_BRACKET    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL  &trans
+&to 4   &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp EQUAL            &trans  &trans           &trans         &trans         &trans     &trans
+                                        &kp PERIOD    &kp N0        &kp MINUS            &to 0   &trans           &trans
             >;
         };
 
