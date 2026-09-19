@@ -15,7 +15,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
             quick-tap-ms = <180>;
@@ -118,6 +118,34 @@
             require-prior-idle-ms = <120>;
             label = "CAPS_WORD_LAYER_TAP";
         };
+
+        hrm_left: hrm_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <120>;
+            label = "HRM_LEFT";
+            hold-trigger-key-positions = <6 10 11 18 19 20 21 22 23 30 31 32 33 34 35 7 8 9>;
+            hold-trigger-on-release;
+        };
+
+        hrm_right: hrm_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+
+            quick-tap-ms = <180>;
+            require-prior-idle-ms = <120>;
+            label = "HRM_RIGHT";
+            hold-trigger-key-positions = <0 1 5 12 13 14 15 16 17 24 25 26 27 28 29 2 3 4 5>;
+            hold-trigger-on-release;
+        };
     };
 
     combos {
@@ -127,28 +155,6 @@
             bindings = <&kp LC(SPACE)>;
             key-positions = <13 40>;
             layers = <0>;
-        };
-
-        paraless_combo {
-            bindings = <&paraless>;
-            key-positions = <27 28 27>;
-            layers = <0>;
-        };
-
-        paragreat_combo {
-            bindings = <&paragreat>;
-            key-positions = <31 32>;
-            layers = <0>;
-        };
-
-        bracket_left_combo {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <3 4>;
-        };
-
-        bracket_right_combo {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
         };
     };
 
@@ -167,10 +173,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&key_repeat                       &kp Q               &kp W           &kp E                     &kp R                          &kp T           &kp Y        &kp U              &kp I            &kp O            &kp P           &terminal_tmux_tapdance
-&hold_preferred LEFT_SHIFT GRAVE  &hm LEFT_CONTROL A  &hm LEFT_ALT S  &hm LEFT_GUI D            &hm LEFT_SHIFT F               &kp G           &kp H        &hm RIGHT_SHIFT J  &hm RIGHT_GUI K  &hm RIGHT_ALT L  &hm RCTRL SEMI  &hold_preferred RIGHT_SHIFT APOS
-&kp EQUAL                         &kp Z               &kp X           &kp C                     &kp V                          &kp B           &kp N        &kp M              &kp COMMA        &kp DOT          &kp FSLH        &kp MINUS
-                                                                      &caps_word_layer_tap 3 0  &layer_tap_repeat 1 BACKSPACE  &lt 2 ESCAPE    &lt 5 ENTER  &lt 4 SPACE        &kp TAB
+&key_repeat                       &kp Q                     &kp W                 &kp E                     &kp R                          &kp T           &kp Y        &kp U                     &kp I                   &kp O                   &kp P                  &terminal_tmux_tapdance
+&hold_preferred LEFT_SHIFT GRAVE  &hrm_left LEFT_CONTROL A  &hrm_left LEFT_ALT S  &hrm_left LEFT_GUI D      &hrm_left LEFT_SHIFT F         &kp G           &kp H        &hrm_right RIGHT_SHIFT J  &hrm_right RIGHT_GUI K  &hrm_right RIGHT_ALT L  &hrm_right RCTRL SEMI  &hold_preferred RIGHT_SHIFT APOS
+&kp EQUAL                         &kp Z                     &kp X                 &kp C                     &kp V                          &kp B           &kp N        &kp M                     &kp COMMA               &kp DOT                 &kp FSLH               &kp MINUS
+                                                                                  &caps_word_layer_tap 3 0  &layer_tap_repeat 1 BACKSPACE  &lt 2 ESCAPE    &lt 5 ENTER  &lt 4 SPACE               &kp TAB
             >;
         };
 
