@@ -9,6 +9,11 @@
 #define ADJ 3
 #define EXTRA 4
 
+&sk {
+  release-after-ms = <900>;
+  quick-release;
+};
+
 / {
     behaviors {
         hm: homerow_mods {
