@@ -152,10 +152,19 @@
         sticky_shift_caps: sticky_shift_caps {
             compatible = "zmk,behavior-mod-morph";
             label = "STICKY_SHIFT_CAPS";
-            bindings = <&sk LSHFT>, <&caps>;
+            bindings = <&sticky_quick_release 0>, <&caps>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        sticky_quick_release: sticky_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_QUICK_RELEASE";
+            bindings = <&none>;
+            #binding-cells = <1>;
+            quick-release;
+            release-after-ms = <900>;
         };
     };
 
