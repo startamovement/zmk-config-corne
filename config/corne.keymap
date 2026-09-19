@@ -122,7 +122,7 @@
         hrm_left: hrm_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
@@ -137,7 +137,7 @@
         hrm_right: hrm_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <200>;
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
 
@@ -152,7 +152,7 @@
         sticky_shift_caps: sticky_shift_caps {
             compatible = "zmk,behavior-mod-morph";
             label = "STICKY_SHIFT_CAPS";
-            bindings = <&sticky_quick_release 0>, <&caps>;
+            bindings = <&sticky_quick_release LEFT_SHIFT>, <&caps>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
@@ -161,7 +161,7 @@
         sticky_quick_release: sticky_quick_release {
             compatible = "zmk,behavior-sticky-key";
             label = "STICKY_QUICK_RELEASE";
-            bindings = <&none>;
+            bindings = <&sk>;
             #binding-cells = <1>;
             quick-release;
             release-after-ms = <900>;
