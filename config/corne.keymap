@@ -174,7 +174,7 @@
         compatible = "zmk,combos";
 
         ctrl_space_combo {
-            bindings = <&kp LC(SPACE)>;
+            bindings = <&ctrl_space>;
             key-positions = <13 40>;
             layers = <0>;
         };
