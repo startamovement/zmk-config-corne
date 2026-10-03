@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TERMINAL_TMUX_TAPDANCE";
             #binding-cells = <0>;
-            bindings = <&kp LC(SPACE)>, <&kp LC(GRAVE)>;
+            bindings = <&ctrl_space>, <&ctrl_backtick>;
         };
 
         caps_word_layer_tap: caps_word_layer_tap {
@@ -118,7 +118,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            bindings = <&mo>, <&sticky_shift_caps>;
+            bindings = <&mo>, <&sticky_shift_caps_word>;
 
             quick-tap-ms = <180>;
             require-prior-idle-ms = <120>;
@@ -156,10 +156,17 @@
         sticky_shift_caps: sticky_shift_caps {
             compatible = "zmk,behavior-mod-morph";
             label = "STICKY_SHIFT_CAPS";
-            bindings = <&sk LEFT_SHIFT>, <&caps>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+        };
+
+        sticky_shift_caps_word: sticky_shift_caps_word {
+            compatible = "zmk,behavior-tap-dance";
+            label = "STICKY_SHIFT_CAPS_WORD";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
         };
     };
 
@@ -174,6 +181,32 @@
     };
 
     //
+
+    macros {
+        ctrl_backtick: ctrl_backtick {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(GRAVE)>,
+                <&macro_release>,
+                <&kp LC(GRAVE)>;
+
+            label = "CTRL_BACKTICK";
+        };
+
+        ctrl_space: ctrl_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(SPACE)>,
+                <&macro_release>,
+                <&kp LC(SPACE)>;
+
+            label = "CTRL_SPACE";
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -248,7 +281,7 @@
         SYM {
             display-name = "Symbols";
             bindings = <
-&trans  &kp TILDE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PIPE             &trans  &trans           &trans         &trans         &trans     &trans
+&trans  &kp GRAVE         &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp PIPE             &trans  &trans           &trans         &trans         &trans     &trans
 &trans  &kp LEFT_BRACKET  &kp DOLLAR       &kp PERCENT   &kp CARET             &kp RIGHT_BRACKET    &trans  &kp RIGHT_SHIFT  &kp RIGHT_GUI  &kp RIGHT_ALT  &kp RCTRL  &trans
 &to 5   &kp LEFT_BRACE    &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp RIGHT_BRACE      &trans  &trans           &trans         &trans         &trans     &trans
                                            &paraless     &paragreat            &kp UNDERSCORE       &to 0   &trans           &trans
