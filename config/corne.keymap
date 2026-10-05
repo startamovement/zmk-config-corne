@@ -308,7 +308,7 @@
         };
 
         layer_8 {
-            label = "Mouse";
+            label = "Mouse_backup";
             bindings = <
 &trans  &trans            &trans        &trans        &trans          &trans    &kp LG(V)        &kp LG(C)       &kp LG(X)       &kp LG(Z)        &kp LG(LS(Z))  &trans
 &trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &caps          &trans
