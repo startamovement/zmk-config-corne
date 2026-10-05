@@ -166,7 +166,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "STICKY_SHIFT_CAPS_WORD";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+            bindings = <&sk LEFT_SHIFT>, <&caps_word>;
         };
     };
 
