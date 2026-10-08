@@ -279,10 +279,10 @@
 
         NAV {
             bindings = <
-&trans  &trans            &trans        &to_tap       &to_base        &trans    &kp LG(LA(LEFT))  &kp LG(LS(LEFT_BRACKET))  &kp LS(LG(RIGHT_BRACKET))  &kp LG(LA(RIGHT))  &trans               &trans
-&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp LEFT          &kp DOWN_ARROW            &kp UP_ARROW               &kp RIGHT          &caps_word_capslock  &trans
-&trans  &trans            &trans        &to_num       &to_nav         &trans    &kp HOME          &kp PAGE_DOWN             &kp PAGE_UP                &kp END            &kp INSERT           &trans
-                                        &trans        &trans          &trans    &trans            &trans                    &trans
+&trans  &trans            &trans        &to_tap       &to_base        &trans    &kp LG(LA(LEFT))  &kp LG(LS(RIGHT_BRACKET))  &kp LS(LG(LEFT_BRACKET))  &kp LG(LA(RIGHT))  &trans               &trans
+&trans  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_SHIFT  &trans    &kp LEFT          &kp DOWN_ARROW             &kp UP_ARROW              &kp RIGHT          &caps_word_capslock  &trans
+&trans  &trans            &trans        &to_num       &to_nav         &trans    &kp HOME          &kp PAGE_DOWN              &kp PAGE_UP               &kp END            &kp INSERT           &trans
+                                        &trans        &trans          &trans    &trans            &trans                     &trans
             >;
 
             label = "Nav";
